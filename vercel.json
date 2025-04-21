@@ -4,7 +4,11 @@
     "builds": [
         {
             "src": "api/index.php",
-            "use": "vercel-php@0.6.0"
+            "use": "vercel-php@0.6.0",
+            "config": {
+                "runtime": "php8.1",
+                "composer": true
+            }
         },
         {
             "src": "public/**",
@@ -46,15 +50,5 @@
         "LOG_CHANNEL": "stderr",
         "SESSION_DRIVER": "cookie",
         "NODE_PATH": "node"
-    },
-    "build": {
-        "env": {
-            "PHP_VERSION": "8.1"
-        }
-    },
-    "functions": {
-        "api/*.php": {
-            "runtime": "vercel-php@0.6.0"
-        }
     }
 }
