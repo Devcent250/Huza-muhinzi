@@ -4,7 +4,14 @@
     "builds": [
         {
             "src": "api/index.php",
-            "use": "vercel-php@0.6.0"
+            "use": "@vercel/php",
+            "config": {
+                "composer": true,
+                "php": {
+                    "version": "8.1",
+                    "composerVersion": "2"
+                }
+            }
         },
         {
             "src": "public/**",
@@ -33,8 +40,8 @@
         "APP_NAME": "Huza Muhinzi",
         "APP_ENV": "production",
         "APP_DEBUG": "false",
-        "APP_URL": "https://huzamuhinz.vercel.app",
-        "ASSET_URL": "https://huzamuhinz.vercel.app",
+        "APP_URL": "https://huzamuhinzii.vercel.app",
+        "ASSET_URL": "https://huzamuhinzii.vercel.app",
         "APP_CONFIG_CACHE": "/tmp/config.php",
         "APP_EVENTS_CACHE": "/tmp/events.php",
         "APP_PACKAGES_CACHE": "/tmp/packages.php",
