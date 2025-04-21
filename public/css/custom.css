@@ -1,0 +1,160 @@
+/* General Responsive Styles */
+:root {
+    --primary-color: #28a745;
+    --secondary-color: #6c757d;
+    --success-color: #28a745;
+    --danger-color: #dc3545;
+    --warning-color: #ffc107;
+    --info-color: #17a2b8;
+}
+
+/* Responsive Typography */
+html {
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+/* Responsive Container Padding */
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}
+
+/* Card Responsiveness */
+.card {
+    margin-bottom: 1rem;
+}
+
+.card-body {
+    padding: 1.25rem;
+}
+
+@media (max-width: 576px) {
+    .card-body {
+        padding: 1rem;
+    }
+}
+
+/* Table Responsiveness */
+.table-responsive {
+    margin-bottom: 1rem;
+}
+
+/* Form Controls */
+.form-control {
+    max-width: 100%;
+}
+
+/* Buttons */
+.btn {
+    white-space: nowrap;
+    margin: 0.25rem;
+}
+
+@media (max-width: 576px) {
+    .btn {
+        display: block;
+        width: 100%;
+        margin: 0.25rem 0;
+    }
+}
+
+/* Grid System Enhancements */
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+@media (max-width: 576px) {
+    .row {
+        margin-right: -10px;
+        margin-left: -10px;
+    }
+}
+
+/* Navigation Enhancements */
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1.25rem;
+    }
+}
+
+/* Stats Cards */
+.stats-card {
+    transition: transform 0.3s ease;
+}
+
+.stats-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Dashboard Widgets */
+.dashboard-widget {
+    height: 100%;
+    min-height: 200px;
+}
+
+@media (max-width: 768px) {
+    .dashboard-widget {
+        min-height: 150px;
+    }
+}
+
+/* Image Responsiveness */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Modal Responsiveness */
+.modal-dialog {
+    margin: 1rem;
+}
+
+@media (max-width: 576px) {
+    .modal-dialog {
+        margin: 0.5rem;
+    }
+}
+
+/* Utility Classes */
+.text-truncate-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Responsive Spacing */
+@media (max-width: 576px) {
+    .p-sm-2 {
+        padding: 0.5rem !important;
+    }
+
+    .m-sm-2 {
+        margin: 0.5rem !important;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .no-print {
+        display: none !important;
+    }
+}
