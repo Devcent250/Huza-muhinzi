@@ -4,7 +4,7 @@
     "builds": [
         {
             "src": "api/index.php",
-            "use": "now-php"
+            "use": "vercel-php@0.6.0"
         },
         {
             "src": "public/**",
@@ -47,6 +47,14 @@
         "SESSION_DRIVER": "cookie",
         "NODE_PATH": "node"
     },
-    "buildCommand": "composer install --no-dev --optimize-autoloader && npm install && npm run build",
-    "outputDirectory": "public"
+    "build": {
+        "env": {
+            "PHP_VERSION": "8.1"
+        }
+    },
+    "functions": {
+        "api/*.php": {
+            "runtime": "vercel-php@0.6.0"
+        }
+    }
 }
