@@ -4,18 +4,7 @@
     "builds": [
         {
             "src": "api/index.php",
-            "use": "vercel-php@0.6.0",
-            "config": {
-                "php.ini": {
-                    "extension_dir": "/tmp",
-                    "extension": [
-                        "openssl"
-                    ]
-                },
-                "php": {
-                    "version": "8.2"
-                }
-            }
+            "use": "now-php"
         },
         {
             "src": "public/**",
